@@ -26,7 +26,8 @@ insert into employee_Payroll values
 --UC4 Retrieve all data we have inserted into the employee_Payroll
 select * from employee_Payroll
 
---Retrieve data of a particular employee
+--UC5
+-- Retrieve data of a particular employee
 select salary from employee_Payroll where name = 'vivek'
 
 --where condition for data
