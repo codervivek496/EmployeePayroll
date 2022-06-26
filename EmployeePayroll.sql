@@ -25,3 +25,9 @@ insert into employee_Payroll values
 
 --UC4 Retrieve all data we have inserted into the employee_Payroll
 select * from employee_Payroll
+
+--Retrieve data of a particular employee
+select salary from employee_Payroll where name = 'vivek'
+
+--where condition for data
+select * from employee_Payroll where startDate between CAST('2018-01-01' AS Date) and GETDATE();
