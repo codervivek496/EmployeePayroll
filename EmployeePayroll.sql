@@ -16,3 +16,9 @@ salary int not null,
 --startdate stores dates which is not null
 startdate date not null,
 );
+
+--Insert Data into table employee_payroll
+insert into employee_Payroll values
+('Sudhanshu', 60000, '2019-10-12'),
+('Vivek', 80000, '2019-04-05'),
+('Sonu', 90000, '2004-05-09');
