@@ -56,3 +56,38 @@ select gender, count(*) from employee_Payroll  group by gender;
 select min(salary) as "Lowest_Salary" from employee_Payroll;
 
 select max(salary) "Highest_Salary" from employee_Payroll;
+
+--UC8 Extend employee_Payroll
+Alter table employee_payroll add phone bigint;
+
+alter table employee_Payroll add address varchar(300) default 'Patna';
+
+alter table employee_payroll add department varchar(100) default 'Development';
+
+update employee_Payroll
+set phone = 9931532761, address = 'Sasaram', department = 'Reception'
+where name = 'Sudhanshu';
+
+
+update employee_Payroll
+set phone = 9931532762, address = 'Hyderabad', department = 'IT'
+where name = 'Vivek';
+
+
+update employee_Payroll
+set phone = 9931532763, address = 'Delhi', department = 'Account'
+where name = 'Sonu';
+
+
+update employee_Payroll
+set phone = 9931532764, address = 'Patna', department = 'IT'
+where name = 'Aaradhya';
+
+
+update employee_Payroll
+set phone = 9931532761, address = 'Kurukshetra', department = 'HR'
+where name = 'Vanshika';
+
+select * from employee_Payroll
+
+alter table employee_payroll alter column salary float;
